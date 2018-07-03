@@ -14,6 +14,9 @@
 		181C4AEA20EB65B1009F26FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181C4AE820EB65B1009F26FB /* LaunchScreen.storyboard */; };
 		181C4AF520EB65B1009F26FB /* SuretgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C4AF420EB65B1009F26FB /* SuretgramTests.swift */; };
 		181C4B0020EB65B1009F26FB /* SuretgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C4AFF20EB65B1009F26FB /* SuretgramUITests.swift */; };
+		181C4B0E20EB6B78009F26FB /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C4B0D20EB6B78009F26FB /* SecondViewController.swift */; };
+		181C4B1020EB8A08009F26FB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181C4B0F20EB8A08009F26FB /* TableViewCell.swift */; };
+		A7EFA7690475CABEBC3F79BE /* Pods_Suretgram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B564F3ABE13CD04997202C /* Pods_Suretgram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		181C4AFB20EB65B1009F26FB /* SuretgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuretgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181C4AFF20EB65B1009F26FB /* SuretgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuretgramUITests.swift; sourceTree = "<group>"; };
 		181C4B0120EB65B1009F26FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181C4B0D20EB6B78009F26FB /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		181C4B0F20EB8A08009F26FB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2612991DC8EDA08A15541395 /* Pods-Suretgram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suretgram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Suretgram/Pods-Suretgram.release.xcconfig"; sourceTree = "<group>"; };
+		4DE9F131F4B6A05AC382E720 /* Pods-Suretgram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Suretgram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Suretgram/Pods-Suretgram.debug.xcconfig"; sourceTree = "<group>"; };
+		51B564F3ABE13CD04997202C /* Pods_Suretgram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Suretgram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7EFA7690475CABEBC3F79BE /* Pods_Suretgram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				181C4AF320EB65B1009F26FB /* SuretgramTests */,
 				181C4AFE20EB65B1009F26FB /* SuretgramUITests */,
 				181C4ADD20EB65AF009F26FB /* Products */,
+				2BC029FC1F67D118791B9105 /* Pods */,
+				C98B62DF359BC2FB6C153ACE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				181C4ADF20EB65AF009F26FB /* AppDelegate.swift */,
+				181C4B0F20EB8A08009F26FB /* TableViewCell.swift */,
 				181C4AE120EB65AF009F26FB /* ViewController.swift */,
+				181C4B0D20EB6B78009F26FB /* SecondViewController.swift */,
 				181C4AE320EB65AF009F26FB /* Main.storyboard */,
 				181C4AE620EB65B1009F26FB /* Assets.xcassets */,
 				181C4AE820EB65B1009F26FB /* LaunchScreen.storyboard */,
@@ -125,6 +138,23 @@
 			path = SuretgramUITests;
 			sourceTree = "<group>";
 		};
+		2BC029FC1F67D118791B9105 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DE9F131F4B6A05AC382E720 /* Pods-Suretgram.debug.xcconfig */,
+				2612991DC8EDA08A15541395 /* Pods-Suretgram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C98B62DF359BC2FB6C153ACE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51B564F3ABE13CD04997202C /* Pods_Suretgram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181C4B0420EB65B1009F26FB /* Build configuration list for PBXNativeTarget "Suretgram" */;
 			buildPhases = (
+				457BC73C6792740B3CE2E4D6 /* [CP] Check Pods Manifest.lock */,
 				181C4AD820EB65AF009F26FB /* Sources */,
 				181C4AD920EB65AF009F26FB /* Frameworks */,
 				181C4ADA20EB65AF009F26FB /* Resources */,
+				A730164C1B19B20F2E4465D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,11 +283,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		457BC73C6792740B3CE2E4D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Suretgram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A730164C1B19B20F2E4465D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Suretgram/Pods-Suretgram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Suretgram/Pods-Suretgram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181C4AD820EB65AF009F26FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181C4B0E20EB6B78009F26FB /* SecondViewController.swift in Sources */,
+				181C4B1020EB8A08009F26FB /* TableViewCell.swift in Sources */,
 				181C4AE220EB65AF009F26FB /* ViewController.swift in Sources */,
 				181C4AE020EB65AF009F26FB /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +505,7 @@
 		};
 		181C4B0520EB65B1009F26FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DE9F131F4B6A05AC382E720 /* Pods-Suretgram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +523,7 @@
 		};
 		181C4B0620EB65B1009F26FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2612991DC8EDA08A15541395 /* Pods-Suretgram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
